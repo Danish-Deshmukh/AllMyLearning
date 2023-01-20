@@ -1,9 +1,7 @@
 package KunalKushwaha.BinarySearch.BinarySearchInterviewQuestions;
 
 public class Q8RotatedBinarySearch {
-
     public static void main(String[] args) {
-
         int[] arr = {4, 5, 6, 7, 0, 1, 2};
 //        System.out.println(findPivot(arr));
         int target = 2;
@@ -11,7 +9,6 @@ public class Q8RotatedBinarySearch {
     }
 
     static int search(int[] numb, int target) {
-
         int pivot = findPivot(numb);
 
         if (pivot == -1) {
