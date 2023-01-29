@@ -9,7 +9,7 @@ class Q3FindTheSmallestLetterGreaterThenTarget {
         char[] letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
         char target = 'g';
         System.out.println(nextGreatestLetter(letters, target));
-    }
+                      }
 
     public static char nextGreatestLetter(char[] letters, char target) {
 

@@ -11,6 +11,8 @@ public class Q4SearchIn2DArray {
                 {12, 31, 45, 75, 343}
         };
         System.out.println(Arrays.toString(search(arr, 45)));
+        System.out.println(max(arr));
+        System.out.println(Integer.MIN_VALUE);
     }
 
     static int[] search(int[][] arr, int target) {
@@ -24,8 +26,6 @@ public class Q4SearchIn2DArray {
                 }
             }
         }
-
-
         return new int[]{-1, -1};
     }
 
@@ -39,7 +39,18 @@ public class Q4SearchIn2DArray {
                 }
             }
         }
-
         return false;
+    }
+
+    static int max(int[][] arr) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > max){
+                    max = arr[i][j];
+                }
+            }
+        }
+        return max;
     }
 }
