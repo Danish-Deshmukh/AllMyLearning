@@ -1,4 +1,4 @@
-package Algorithms.SearchingAlgo.Questions;
+package Algorithms.SortingAlgo.Questions;
 
 public class Q3FindDuplicateNumber {
     public static void main(String[] args) {

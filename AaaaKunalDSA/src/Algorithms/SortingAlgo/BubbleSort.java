@@ -1,4 +1,4 @@
-package Algorithms.SearchingAlgo;
+package Algorithms.SortingAlgo;
 
 import java.util.Arrays;
 

@@ -1,15 +1,13 @@
-package Algorithms.SearchingAlgo.Questions;
+package Algorithms.SortingAlgo.Questions;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
-public class Q2FindAllMissing {
+public class Q5SetMismatch {
     public static void main(String[] args) {
-        int[] arr = {1,1,2};
-        System.out.println(findAllMissingNumbers(arr));
+        int[] arr = {3,2,2};
+        System.out.println(Arrays.toString(findDuplicates(arr)));
     }
-    // Solving using cyclic sort
-    static List<Integer> findAllMissingNumbers (int[] arr) {
+    public static int[] findDuplicates(int[] arr) {
         int i = 0;
         while (i < arr.length) {
             int correct = arr[i]-1;
@@ -17,13 +15,17 @@ public class Q2FindAllMissing {
                 swap(arr, i, correct);
             } else i++;
         }
-        List<Integer> ans = new ArrayList<>();
+//        int one = 0;
+//        int tow = 0;
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] != index+1) {
-                ans.add(arr[index]);
+                return new int[] {arr[index] , index +1};
+//                one = arr[index];
+//                tow = index+1;
+
             }
         }
-        return ans;
+        return new int[] {-1,-1};
     }
     static void swap(int[] arr, int first, int second) {
         int temp = arr[first];

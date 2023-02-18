@@ -1,4 +1,4 @@
-package Algorithms.SearchingAlgo.Questions;
+package Algorithms.SortingAlgo.Questions;
 
 import java.util.ArrayList;
 import java.util.List;

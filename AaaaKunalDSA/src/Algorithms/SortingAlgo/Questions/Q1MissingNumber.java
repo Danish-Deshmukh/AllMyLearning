@@ -1,4 +1,4 @@
-package Algorithms.SearchingAlgo.Questions;
+package Algorithms.SortingAlgo.Questions;
 
 public class Q1MissingNumber {
     public static void main(String[] args) {

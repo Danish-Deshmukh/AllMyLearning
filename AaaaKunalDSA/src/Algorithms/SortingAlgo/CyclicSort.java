@@ -1,8 +1,8 @@
-package Algorithms.SearchingAlgo;
+package Algorithms.SortingAlgo;
 
 import java.util.Arrays;
 
-import static Algorithms.SearchingAlgo.SelectionSort.swap;
+import static Algorithms.SortingAlgo.SelectionSort.swap;
 
 public class CyclicSort {
     public static void main(String[] args) {
