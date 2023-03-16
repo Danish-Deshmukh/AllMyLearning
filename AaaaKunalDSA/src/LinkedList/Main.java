@@ -17,6 +17,12 @@ public class Main {
         list.insertLast(219);
         list.insertLast(21);
         list.display();
+        list.deleteFirst();
+        list.display();
+        list.deleteLast();
+        list.display();
+        list.delete(2);
+        list.display();
 
         LinkedList<Integer> oL = new LinkedList<>();
 //        oL.addFirst(31);
