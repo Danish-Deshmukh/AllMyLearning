@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Meal {
 
-    public static double IndianPrice = 80.00;
+    public static final double IndianPrice = 80.00;
     private double price = 5.0;
     private Burger burger;
     private Item drink;
