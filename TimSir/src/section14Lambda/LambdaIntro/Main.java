@@ -54,5 +54,6 @@ public class Main {
         };
         people.sort(ComparatorFirtName);
         System.out.println(people);
+        System.out.println("Hellow");
     }
 }
