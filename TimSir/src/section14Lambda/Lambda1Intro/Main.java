@@ -1,4 +1,4 @@
-package section14Lambda.LambdaIntro;
+package section14Lambda.Lambda1Intro;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,13 +17,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Person> people = new ArrayList<>(Arrays.asList(
+        List<Person> friends = new ArrayList<>(Arrays.asList(
                 new Main.Person("Ross","Geller"),
                 new Person("Monika","Geller"),
                 new Person("Joe","Tribbiani"),
                 new Person("Rachel","Green"),
                 new Person("Phebe","unknown")));
 
+        // Using anonymous class
         var comparatorLastName = new Comparator<Person>() {
 
             @Override
@@ -31,16 +32,16 @@ public class Main {
                 return o1.lastName().compareTo(o2.lastName());
             }
         };
-
-
-        people.sort((o1, o2) -> o1.lastName.compareTo(o2.lastName));
-        System.out.println(people);
+        System.out.println("--------");
+        friends.sort((o1,o2) -> o1.lastName.compareTo(o2.lastName));
+        System.out.println(friends);
+        System.out.println("--------");
 
         interface EnhancedComparator<T> extends Comparator<T> {
             int secondLevel(T o1, T o2);
         }
 
-        var ComparatorFirtName = new EnhancedComparator<Person>() {
+        var ComparatorMixed = new EnhancedComparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
                 int result = o1.lastName().compareTo(o2.lastName());
@@ -52,8 +53,7 @@ public class Main {
                 return o1.firtName.compareTo(o2.firtName);
             }
         };
-        people.sort(ComparatorFirtName);
-        System.out.println(people);
-        System.out.println("Hellow");
+        friends.sort(ComparatorMixed);
+        System.out.println(friends);
     }
 }
