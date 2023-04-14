@@ -6,17 +6,25 @@ import java.util.Map;
 public class Location {
     private final int locationID;
     private final String description;
-    private final Map<String,Integer> exits;
+    private final Map<String,Integer> ways;
 
-    public Location(int locationID, String description) {
+    public Location(int locationID, String description, Map<String, Integer> ways) {
         this.locationID = locationID;
         this.description = description;
-        this.exits = new HashMap<String, Integer>();
-        this.exits.put("Q",0);
+        if (ways != null) {
+            this.ways = new HashMap<String, Integer>(ways);
+        }else {
+            this.ways = new HashMap<String, Integer>();
+        }
+        this.ways.put("Q",0);
     }
 
-    public void addExit(String direction, int location) {
-        exits.put(direction, location);
+    public Map<String, Integer> getWays() {
+        return ways;
+    }
+
+    public void addway(String direction, int location) {
+        ways.put(direction, location);
     }
 
 
@@ -26,9 +34,5 @@ public class Location {
 
     public String getDescription() {
         return description;
-    }
-
-    public Map<String, Integer> getExits() {
-        return new HashMap<String,Integer>(exits);
     }
 }
