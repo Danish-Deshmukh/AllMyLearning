@@ -1,9 +1,6 @@
 package section16Collections._3Sets;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -117,5 +114,8 @@ public class Main {
         Object o = new Object();
         o.equals(o);
         "pluto".equals("");
+
+        Integer a = 3;
+//        System.out.println(Math);
     }
 }
