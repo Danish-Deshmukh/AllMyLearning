@@ -1,4 +1,4 @@
-package section16Collections._04SortedCollection;
+package section16Collections._04SortedCollections;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

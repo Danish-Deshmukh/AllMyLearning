@@ -1,4 +1,4 @@
-package section16Collections._04SortedCollection;
+package section16Collections._04SortedCollections;
 
 public class StockItem implements Comparable<StockItem> {
     private final String name;
