@@ -1,4 +1,4 @@
-package section16Collections._04SortedCollections;
+package section16Collections._04SortedCollection;
 
 public class Main {
 
